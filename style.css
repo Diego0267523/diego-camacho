@@ -32,7 +32,12 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+
 .boton {
   display: inline-block;
   background-color: #1a1a1a;
@@ -42,6 +47,15 @@ ul {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-bottom: 10px; /* esto separa los botones */
+  margin-bottom: 10px;
+  width: auto;
+}
+
+/* En pantallas pequeñas, botón al 100% del ancho */
+@media screen and (max-width: 600px) {
+  .boton {
+    width: 100%;
+    text-align: center;
+  }
 }
 
