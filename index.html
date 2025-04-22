@@ -1,141 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CawCode - Iniciar Sesión</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="main-container">
+    <section class="left-section">
+      <div class="description">
+        <p>
+          Plataforma inteligente para el monitoreo e identificación de ganado mediante lectores de chapetas RFID. 
+          <strong>CawCode</strong> permite gestionar tu hato con precisión, trazabilidad y eficiencia digital.
+        </p>
+      </div>
+    </section>
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-}
+    <section class="right-section">
+      <div class="form-box">
+        <h1 class="brand-title">CawCode</h1>
+        <form class="login-form">
+          <input type="text" placeholder="Teléfono, usuario o correo electrónico" required />
+          <input type="password" placeholder="Contraseña" required />
+          <button type="submit">Entrar</button>
+        </form>
+        <div class="divider">
+          <div class="line"></div>
+          <div class="or">O</div>
+          <div class="line"></div>
+        </div>
+        <div class="forgot">
+          <a href="#">¿Has olvidado la contraseña?</a>
+        </div>
+      </div>
 
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
+      <div class="register-box">
+        <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
 
-.left-section {
-  flex: 1;
-  max-width: 380px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.description {
-  text-align: center;
-}
-
-.brand-title {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.project-description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.right-section {
-  flex: 1;
-  max-width: 380px;
-}
-
-.form-box {
-  background-color: #121212;
-  border: 1px solid #262626;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.login-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #262626;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 14px;
-}
-
-.login-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #0095f6;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.divider {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.divider .line {
-  flex: 1;
-  height: 1px;
-  background-color: #333;
-}
-
-.divider .or {
-  margin: 0 10px;
-  color: #aaa;
-  font-size: 12px;
-}
-
-.forgot {
-  margin-top: 10px;
-  font-size: 12px;
-}
-
-.forgot a {
-  color: #0095f6;
-  text-decoration: none;
-}
-
-.register-box {
-  background-color: #121212;
-  border: 1px solid #262626;
-  margin-top: 10px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.register-box a {
-  color: #0095f6;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.mobile-only {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-  }
-
-  .left-section {
-    display: none;
-  }
-
-  .mobile-only {
-    display: block;
-  }
-}
 
