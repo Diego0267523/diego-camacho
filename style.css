@@ -9,6 +9,21 @@ body {
 
   }
 
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+  width: 100%;
+}
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+h1, h2, p {
+  text-align: center;
+}
 
   
   section {
