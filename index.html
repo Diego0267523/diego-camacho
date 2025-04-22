@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diego Camacho</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diego Camacho - Portafolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- Enlace al CSS -->
-  <link rel="stylesheet" href="style.css">
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .contenedor {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 30px 0;
+      width: 100%;
+    }
+
+    .boton-proyecto {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-proyecto:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .boton-proyecto {
+        width: 80%;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="contenedor">
-    <section id="inicio">
-      <h1>Hola, soy Diego Camacho</h1>
-      <p>Desarrollador web en formación 🚀</p>
-    </section>
-    <hr>
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Me gusta la tecnología, el desarrollo web y aprender cosas nuevas.</p>
-    </section>
-    <hr>
-    <section id="proyectos">
-      <h2>Mis Proyectos</h2>
-      <ul>
-        <li><a class="boton-proyecto" href="proyecto-1/">Proyecto 1</a></li>
-        <li><a class="boton-proyecto" href="#">Proyecto 2</a></li>
-      </ul>
-    </section>
+    <h1>Hola, soy Diego Camacho</h1>
+    <p>Desarrollador web en formación 🚀</p>
+
+    <hr />
+
+    <h2>Sobre mí</h2>
+    <p>Me gusta la tecnología, el desarrollo web y aprender cosas nuevas.</p>
+
+    <hr />
+
+    <h2>Mis Proyectos</h2>
+    <a class="boton-proyecto" href="proyecto-1/">Proyecto 1</a><br />
+    <a class="boton-proyecto" href="#">Proyecto 2</a>
   </div>
 </body>
+</html>
 
-</html>  <!-- ⬅️ Este es el que faltaba -->
