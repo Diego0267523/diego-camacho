@@ -20,35 +20,38 @@ body {
 
 .left-section {
   flex: 1;
-  max-width: 380px;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px;
+  max-width: 500px;
 }
 
 .description {
   text-align: center;
-}
-
-.brand-title {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.project-description {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.8;
   color: #ddd;
 }
 
 .right-section {
   flex: 1;
-  max-width: 380px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-title {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
 }
 
 .form-box {
+  width: 100%;
   background-color: #121212;
   border: 1px solid #262626;
   padding: 40px;
@@ -107,6 +110,7 @@ body {
 }
 
 .register-box {
+  width: 100%;
   background-color: #121212;
   border: 1px solid #262626;
   margin-top: 10px;
@@ -121,10 +125,6 @@ body {
   font-weight: bold;
 }
 
-.mobile-only {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
@@ -133,6 +133,12 @@ body {
   .left-section {
     display: none;
   }
+
+  .right-section {
+    max-width: 100%;
+  }
+}
+
 
   .mobile-only {
     display: block;
