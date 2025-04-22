@@ -1,13 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #FFF3E4;
+  color: #5A4B41;
 }
 
 .main-container {
@@ -31,7 +25,7 @@ body {
   text-align: center;
   font-size: 1rem;
   line-height: 1.8;
-  color: #ddd;
+  color: #6E5849;
 }
 
 .right-section {
@@ -47,38 +41,44 @@ body {
   font-size: 40px;
   margin-bottom: 25px;
   text-align: center;
-  color: #fff;
+  color: #6E5849;
 }
 
 .form-box {
   width: 100%;
-  background-color: #121212;
-  border: 1px solid #262626;
+  background-color: #CFE8F5;
+  border: 1px solid #A8D5BA;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .login-form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #262626;
-  border: none;
+  background-color: #F8F8F8;
+  border: 1px solid #D4CCC4;
   border-radius: 5px;
-  color: #fff;
+  color: #4A403A;
   font-size: 14px;
 }
 
 .login-form button {
   width: 100%;
   padding: 10px;
-  background-color: #0095f6;
+  background-color: #A8D5BA;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #3F3F3F;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #94C9AB;
 }
 
 .divider {
@@ -90,12 +90,12 @@ body {
 .divider .line {
   flex: 1;
   height: 1px;
-  background-color: #333;
+  background-color: #B3B3B3;
 }
 
 .divider .or {
   margin: 0 10px;
-  color: #aaa;
+  color: #888;
   font-size: 12px;
 }
 
@@ -105,14 +105,14 @@ body {
 }
 
 .forgot a {
-  color: #0095f6;
+  color: #A67B5B;
   text-decoration: none;
 }
 
 .register-box {
   width: 100%;
-  background-color: #121212;
-  border: 1px solid #262626;
+  background-color: #EAF7F0;
+  border: 1px solid #A8D5BA;
   margin-top: 10px;
   padding: 20px;
   text-align: center;
@@ -120,7 +120,7 @@ body {
 }
 
 .register-box a {
-  color: #0095f6;
+  color: #A67B5B;
   text-decoration: none;
   font-weight: bold;
 }
@@ -133,6 +133,12 @@ body {
   .left-section {
     display: none;
   }
+
+  .right-section {
+    max-width: 100%;
+  }
+}
+
 
   .right-section {
     max-width: 100%;
